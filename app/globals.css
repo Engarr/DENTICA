@@ -12,6 +12,7 @@
   --transparent-black-80: rgba(0, 0, 0, 0.8);
   --main-color: #009adf;
   --text-first-color: #f8f1f1;
+  --text-second-color: #484646;
   --text-first-color-hover: #c6e6fc;
 }
 
@@ -32,16 +33,4 @@ body {
 }
 .divShadow {
   filter: drop-shadow(-1px 6px 3px rgba(0, 34, 50, 0.5));
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr auto; /* Jedna kolumna elastyczna, druga auto (dopasowana do szerokości zdjęcia) */
-  height: 100%;
-}
-
-.image {
-  max-width: 100%; /* Maksymalna szerokość dla obrazu */
-  height: auto; /* Auto wysokość, aby zachować proporcje */
-  align-self: center; /* Wyrównaj obraz do środka w pionie */
-  justify-self: end; /* Umieść obraz na końcu w poziomie (prawy bok) */
 }

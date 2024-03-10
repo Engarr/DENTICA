@@ -1,20 +1,11 @@
-import Image from 'next/image';
-import bg from '@/public/bg.jpg';
+import BackgroundImage from './components/background-image';
+import WelcomeText from './components/welcome-text';
 
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between  h-[1000px] '>
-      <div className='absolute top-0 left-0 w-full h-full overflow-x-hidden'>
-        <div className='relative top-0 left-[-25%] sm:left-0 w-full h-[100vh] min-w-[180vh] lg:min-w-[200vh'>
-          <Image
-            alt=''
-            src={bg}
-            width={5955}
-            height={2881}
-            className=' top-0 left-0 absolute h-full w-full'
-          />
-        </div>
-      </div>
+      <BackgroundImage />
+      <WelcomeText />
     </main>
   );
 }
