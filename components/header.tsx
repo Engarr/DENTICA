@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <>
       <motion.header
-        className='flex sticky sm:justify-center justify-between w-[100%] sm:h-[80px] z-10 top-0  '
+        className='flex sticky sm:justify-center justify-between w-[100%] sm:h-[80px] z-30 top-0  '
         variants={{
           visible: { y: 0 },
           hidden: { y: -200 },
@@ -44,8 +44,8 @@ const Header = () => {
                   scale: 1.05,
                   transition: { duration: 0.1 },
                 }}
-                className='flex items-center absolute left-[1%] top-[17px]'>
-                <div className='custom:inline ml-[1rem] sm:ml-0 w-[4rem] sm:w-[90px] h-auto rounded-[17px] overflow-hidden z-[999]'>
+                className='flex items-center absolute left-[1%] top-[17px] '>
+                <div className='custom:inline ml-[0.5rem] sm:ml-0 w-[4rem] sm:w-[90px] h-auto rounded-[17px] overflow-hidden z-[999] mr-2 '>
                   {' '}
                   <Image
                     src={logo}
@@ -55,12 +55,15 @@ const Header = () => {
                     priority
                   />
                 </div>
-                <h1 className='hidden lg:flex pl-[0rem] sm:pl-[1rem] text-[var(--main-color)] text-4xl uppercase font-bold tracking-wider  flex-col'>
-                  Dentica
-                  <span className='text-base tracking-tight'>
-                    Gabinet stomatologiczny
-                  </span>
-                </h1>
+                <div className='relative hidden lg:inline-block '>
+                  <div className='relative hidden lg:flex h-[80px]   flex-col bg-slate-200/75 px-3 rounded-[2px] blur-[2px] w-[200px]' />
+                  <h1 className='absolute top-0 p-3 flex flex-col  text-[var(--main-color)] text-4xl uppercase font-bold tracking-wider w-[200px]  '>
+                    Dentica
+                    <span className='text-base tracking-tight'>
+                      Gabinet stomatologiczny
+                    </span>
+                  </h1>
+                </div>
               </motion.div>
             </Link>
           </div>

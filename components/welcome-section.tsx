@@ -5,11 +5,12 @@ import React from 'react';
 
 const WelcomeSection = () => {
   return (
-    <>
+    <section className='h-full w-full '>
       <BackgroundImage />
+
       <WelcomeText />
       <BottomBar />
-    </>
+    </section>
   );
 };
 
