@@ -25,6 +25,3 @@ const WelcomeText = () => {
 };
 
 export default WelcomeText;
-// z-20 absolute top-1/2 lg:top-[35%] xl:top-[40%] xl:left-[100%] text-center gap-1 xl:gap-5 flex flex-col xl:mr-28 bg-white/65 w-full translate-x-1/2 left-1/2
-// lg:text-2xl xl:text-[2.5rem]
-// lg:text-xl xl:text-4xl
