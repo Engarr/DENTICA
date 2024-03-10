@@ -55,10 +55,12 @@ const Header = () => {
                     priority
                   />
                 </div>
-                <p className='hidden lg:inline-block pl-[0rem] sm:pl-[1rem] text-[var(--main-color)] text-4xl uppercase font-bold tracking-wider'>
+                <h1 className='hidden lg:flex pl-[0rem] sm:pl-[1rem] text-[var(--main-color)] text-4xl uppercase font-bold tracking-wider  flex-col'>
                   Dentica
-                  <span className='hidden custom:inline'>Fotograf</span>
-                </p>
+                  <span className='text-base tracking-tight'>
+                    Gabinet stomatologiczny
+                  </span>
+                </h1>
               </motion.div>
             </Link>
           </div>
