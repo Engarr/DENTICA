@@ -1,10 +1,11 @@
-import WelcomeSection from '@/components/welcome-section';
+import SecondSection from '@/components/home-page/second-section';
+import WelcomeSection from '@/components/home-page/welcome-section';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between  h-[1000px] '>
+    <main className='flex min-h-screen flex-col items-center justify-between  '>
       <WelcomeSection />
-      <div className=''>ss</div>
+      <SecondSection />
     </main>
   );
 }

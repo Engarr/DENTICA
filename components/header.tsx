@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import BurgerMenuBtn from './UI/burger-menu-btn';
 import { cn } from './lib/utilis';
 import { usePathname } from 'next/navigation';
@@ -12,7 +12,22 @@ import logo from '@/public/logo.png';
 
 const Header = () => {
   const url = usePathname();
+
+  const [hidden, setHidden] = useState(false);
+
   const [menuVisible, setMenuVisible] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    const previous = scrollY.getPrevious();
+    if (previous) {
+      if (latest > 100) {
+        setHidden(false);
+      } else {
+        setHidden(true);
+      }
+    }
+  });
 
   const handleToggleMenu = () => {
     setMenuVisible((prev) => {
@@ -26,7 +41,7 @@ const Header = () => {
   return (
     <>
       <motion.header
-        className='flex sticky sm:justify-center justify-between w-[100%] sm:h-[80px] z-30 top-0  '
+        className='flex fixed sm:justify-center justify-between w-[100%] sm:h-[80px] z-30 top-0  '
         variants={{
           visible: { y: 0 },
           hidden: { y: -200 },
@@ -68,7 +83,11 @@ const Header = () => {
             </Link>
           </div>
           <div className='divShadow absolute right-[1%] top-[17px]'>
-            <div className='hidden lg:flex items-center  navClipPath bg-[var(--main-color)] h-[80px] w-[624px]  xl:w-[824px] xl:h-[100px] text-center divShadow'>
+            <div
+              className={cn(
+                'hidden lg:flex items-center  navClipPath bg-[var(--main-color)] h-[80px] w-[624px]  xl:w-[824px] xl:h-[100px] text-center ',
+                {}
+              )}>
               <ul className='flex  items-center text-2xl absolute w-3/4 justify-between left-1/2 -translate-x-1/2 tracking-wider '>
                 {links.map((link, index) => (
                   <li
@@ -92,6 +111,12 @@ const Header = () => {
             className='relative lg:hidden pr-2 py-4 mr-2 sm:pr-3 z-30 '
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}>
+            <div
+              className={cn(
+                'absolute lg:hidden bg-white  w-[50px] h-[50px] left-[-5px] top-0 z-[-10] pr-2 py-5 mt-3 mr-4 opacity-65 rounded-[17px] blur-[1px] transition-all duration-500 ',
+                { 'bg-transparent': hidden }
+              )}
+            />
             <BurgerMenuBtn
               isMenuVisible={menuVisible}
               onToggle={handleToggleMenu}
