@@ -27,7 +27,7 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <div className='hidden lg:inline-block lg:absolute w-[550px] lg:left-[-11%] lg:top-[17%] xl:top-[21%] 2xl:w-[650px] 2xl:left-[-10%] 2xl:top-[9%]'>
+          <div className='hidden lg:inline-block lg:absolute w-[550px] lg:w-[500px] lg:left-[-11%] lg:top-[23%] xl:top-[28%] 2xl:w-[650px] 2xl:left-[-10%] 2xl:top-[9%]'>
             <Image
               src={doctor}
               alt='zdjęcie lekarza'
