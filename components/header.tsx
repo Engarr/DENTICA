@@ -4,10 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import BurgerMenuBtn from './UI/burger-menu-btn';
-import { cn } from './lib/utilis';
+import { cn } from '../lib/utilis';
 import { usePathname } from 'next/navigation';
 import MobileMenu from './mobile-menu';
-import { links } from './lib/links';
+import { links } from '../lib/links';
 import logo from '@/public/logo.png';
 
 const Header = () => {

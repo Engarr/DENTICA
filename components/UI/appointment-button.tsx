@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { cn } from '../lib/utilis';
+import { cn } from '../../lib/utilis';
 
 type AppointmentButtonType = {
   style?: string;

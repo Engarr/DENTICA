@@ -1,5 +1,5 @@
 import React from 'react';
-import { linksMobile } from './lib/links';
+import { linksMobile } from '../lib/links';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 
