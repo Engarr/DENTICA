@@ -1,3 +1,4 @@
+import AboutUsSection from '@/components/home-page/about-us-section';
 import OurOffertSection from '@/components/home-page/our-offert-section';
 import SecondSection from '@/components/home-page/second-section';
 import WelcomeSection from '@/components/home-page/welcome-section';
@@ -8,6 +9,7 @@ export default function Home() {
       <WelcomeSection />
       <SecondSection />
       <OurOffertSection />
+      <AboutUsSection />
     </main>
   );
 }
