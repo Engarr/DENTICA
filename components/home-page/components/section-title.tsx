@@ -6,7 +6,7 @@ type SectionTitleType = {
 };
 const SectionTitle = ({ text }: SectionTitleType) => {
   return (
-    <Wrapper style='bg-red-200 '>
+    <Wrapper style=''>
       <div>
         <div className='divShadow absolute top-[17px] left-[5%] lg:left-[17px] w-[92%] lg:w-2/5'>
           <div className='sectionClipPath  h-[60px] lg:h-[80px] bg-[var(--main-color)] '>

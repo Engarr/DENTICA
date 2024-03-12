@@ -1,4 +1,5 @@
 import AboutUsSection from '@/components/home-page/about-us-section';
+import ContactSection from '@/components/home-page/contact-section';
 import OurOffertSection from '@/components/home-page/our-offert-section';
 import SecondSection from '@/components/home-page/second-section';
 import WelcomeSection from '@/components/home-page/welcome-section';
@@ -10,6 +11,8 @@ export default function Home() {
       <SecondSection />
       <OurOffertSection />
       <AboutUsSection />
+
+      <ContactSection />
     </main>
   );
 }

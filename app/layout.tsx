@@ -11,8 +11,8 @@ const poppins = Big_Shoulders_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Szablon startowy',
-  description: 'Szablon startowy',
+  title: 'DENTICA',
+  description: 'Gabinet stomatologiczny',
 };
 
 export default function RootLayout({

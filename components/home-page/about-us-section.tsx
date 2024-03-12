@@ -7,11 +7,11 @@ import Button from '../UI/button';
 
 const AboutUsSection = () => {
   return (
-    <section className='w-full h-[1000px]'>
+    <section className='w-full'>
       <SectionTitle text='Poznaj nas' />
-      <Wrapper style='lg:top-1/2 lg:-translate-y-1/2 mt-[100px] lg:mt-[0px]'>
-        <div className='lg:my-12 relative flex flex-col lg:flex-row justify-around gap-6 lg:gap-20 items-center md:items-start px-4 xs:px-5 md:px-10 2xl:px-0'>
-          <div className='flex flex-col gap-2 xs:gap-4 lg:gap-5 flex-wrap'>
+      <Wrapper style=''>
+        <div className=' relative flex flex-col lg:flex-row justify-around gap-6 lg:gap-20 items-center md:items-start px-4 xs:px-5 md:px-10 2xl:px-0  py-20 mt-[40px] lg:mt-[200px]'>
+          <div className='flex flex-col gap-2 xs:gap-4 lg:gap-5 flex-wrap '>
             <h4 className='text-xl xs:text-2xl lg:text-4xl font-bold'>
               Wyposażenie gabinetu
             </h4>
