@@ -31,7 +31,7 @@ const OffertCard = ({ title, text }: OffertCard) => {
         <p className='text-lg lg:text-xl font-semibold italic'>{text}</p>
       </div>
       <motion.div
-        className='absolute top-[40%] right-[10%] lg:top-0 lg:right-0 p-2 lg:hidden lg:group-hover:inline-block '
+        className='absolute top-[20%] right-[10%] lg:top-0 lg:right-0 p-2 lg:hidden lg:group-hover:inline-block w-[50px] lg:w-[60px]'
         whileTap={{ scale: 0.95 }}
         whileHover={{
           scale: 1.05,
