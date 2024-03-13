@@ -11,10 +11,10 @@ type OfferType = {
   text: string;
 };
 const SPRING_OPTIONS = {
-  type: 'spring',
-  mass: 3,
-  stiffness: 300,
-  damping: 50,
+  // type: 'spring',
+  mass: 4,
+  stiffness: 500,
+  damping: 100,
 };
 
 const OffertsBox = () => {
