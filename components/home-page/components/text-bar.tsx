@@ -17,7 +17,7 @@ type TextBarType = {
 const TextBar = ({ direction }: TextBarType) => {
   const animation = direction === 'left' ? 'animate' : 'animate-reversed';
   return (
-    <div className='w-screen box-border flex overflow-hidden bg-[var(--bar-bg-30)] text-base  lg:text-2xl py-2 text-[var(--text-first-color)] font-semibold items-center justify-center z-20'>
+    <div className='w-screen box-border flex overflow-hidden bg-[var(--bar-bg-30)] text-xs  lg:text-base py-2 text-[var(--text-first-color)] font-semibold items-center justify-center z-20'>
       <div className='max-w-[1920px]  w-full overflow-hidden flex'>
         <div className={cn('animate flex gap-5  lg:gap-24', animation)}>
           {textData.map((t, i) => (

@@ -15,7 +15,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
   };
 
   return (
-    <nav className='absolute uppercase lg:hidden overflow-hidden z-[20] '>
+    <nav className='absolute lg:hidden overflow-hidden z-[20] '>
       <AnimatePresence>
         {menuVisible && (
           <motion.div
@@ -32,7 +32,7 @@ const MobileMenu = ({ handleToggleMenu, menuVisible }: MobileMenuProps) => {
               onClick={(event) => {
                 event.stopPropagation();
               }}>
-              <ul className='flex flex-col items-center justify-center gap-5 text-[var(--main-color)] text-3xl p-10 mt-20 tracking-wider'>
+              <ul className='flex flex-col items-center justify-center gap-5 text-[var(--main-color)] text-3xl p-10 mt-20 '>
                 {linksMobile.map((link) => (
                   <li key={link.hash}>
                     <Link href={link.hash} onClick={handleCloseMenu}>

@@ -11,16 +11,16 @@ const AboutUsSection = () => {
       <SectionTitle text='Poznaj nas' />
       <Wrapper style=''>
         <div className=' relative flex flex-col lg:flex-row justify-around gap-6 lg:gap-20 items-center md:items-start px-4 xs:px-5 md:px-10 2xl:px-0  py-20 mt-[40px] lg:mt-[200px]'>
-          <div className='flex flex-col gap-2 xs:gap-4 lg:gap-5 flex-wrap '>
-            <h4 className='text-xl xs:text-2xl lg:text-4xl font-bold'>
+          <div className='flex flex-col gap-2 xs:gap-4 lg:gap-5 flex-wrap text-[var(--text-second-color)]'>
+            <h4 className='text-base xs:text-lg lg:text-3xl font-semibold'>
               Wyposażenie gabinetu
             </h4>
-            <p className=' text-lg xs:text-xl lg:text-3xl  lg:max-w-[600px] tracking-wide'>
+            <p className=' text-sm xs:text-base lg:text-2xl lg:max-w-[600px] tracking-wide'>
               Nasz nowoczesny sprzęt dentystyczny pozwala na dostarczanie
               najwyższej jakości usług. Leczenie staje się komfortowe,
               bezpieczne i bardzo dokładne.
             </p>
-            <ul className='flex flex-col gap-2 xs:text-lg  lg:text-2xl '>
+            <ul className='flex flex-col gap-2 text-sm s:text-base  lg:text-xl '>
               <li className='flex items-center gap-2 font-semibold'>
                 <div className='w-[10px] h-[2px] bg-[var(--main-color)] relative' />
                 Cyfrowy rentgen

@@ -1,5 +1,5 @@
 export const links = [
-  { name: 'Zabiegi', path: '/zabiegi' },
+  { name: 'Zabiegi', path: '/zabiegi/stomatologia zachowawcza' },
   { name: 'Metamorfozy', path: '/metamorfozy' },
   { name: 'O nas', path: '/o-nas' },
   { name: 'Cennik', path: '/cennik' },
@@ -9,7 +9,7 @@ export const links = [
 export const linksMobile = [
   {
     name: 'Zabiegi',
-    hash: '/zabiegi',
+    hash: '/zabiegi/1',
   },
   {
     name: 'Metamorfozy',

@@ -76,21 +76,21 @@ const ContactForm = () => {
             name='w3review'
             style={{ maxHeight: '150px', minHeight: '50px' }}
             placeholder='Twoja wiadomość'
-            className='px-2 py-2 shadow-2xl text-lg lg:text-2xl'
+            className='px-2 py-2 shadow-2xl text-base lg:text-xl'
           />
         )}
       />
 
       <label htmlFor='agreement' className=' mt-2 flex'>
         <input type='checkbox' className='w-[25px] h-[25px] ' required />
-        <p className='tracking-wide text-md xl:text-xl ml-3 text-[var(--text-first-color)]'>
+        <p className='tracking-wide text-sm xl:text-base ml-3 text-[var(--text-first-color)]'>
           Zgadzam się na przetwarzanie moich danych osobowych przez firmę
           DENTICA w celu kontaktu z Tobą na Twoją prośbę zgodnie z polityką
           prywatności.
         </p>
       </label>
       <div className='flex items-start mt-2 md:w-auto '>
-        <Button style='max-lg:w-full text-md'>Wyślij wiadomość</Button>
+        <Button style='max-lg:w-full '>Wyślij wiadomość</Button>
       </div>
     </form>
   );
@@ -113,7 +113,7 @@ const Input = <T extends FieldValues, K extends Path<T>>({
     <input
       {...field}
       type={type}
-      className='px-2 py-2 shadow-2xl text-lg lg:text-2xl'
+      className='px-2 py-2 shadow-2xl text-base lg:text-xl'
       placeholder={placeholder}
     />
   );

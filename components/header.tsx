@@ -12,7 +12,7 @@ import logo from '@/public/logo.png';
 
 const Header = () => {
   const url = usePathname();
-
+  const linkParts = url.split('/');
   const [hidden, setHidden] = useState(false);
 
   const [menuVisible, setMenuVisible] = useState(false);
@@ -60,7 +60,7 @@ const Header = () => {
                   transition: { duration: 0.1 },
                 }}
                 className='flex items-center absolute left-[1%] top-[17px] '>
-                <div className='custom:inline ml-[0.5rem] sm:ml-0 w-[4rem] sm:w-[90px] h-auto rounded-[17px] overflow-hidden z-[999] mr-2 '>
+                <div className='custom:inline ml-[0.5rem] sm:ml-0 w-[4rem] lg:w-[90px] h-auto rounded-[17px] overflow-hidden z-[999] mr-2 '>
                   {' '}
                   <Image
                     src={logo}
@@ -72,9 +72,9 @@ const Header = () => {
                 </div>
                 <div className='relative hidden lg:inline-block '>
                   <div className='relative hidden lg:flex h-[80px]   flex-col bg-slate-200/75 px-3 rounded-[2px] blur-[2px] w-[200px]' />
-                  <h1 className='absolute top-0 p-3 flex flex-col  text-[var(--main-color)] text-4xl uppercase font-bold tracking-wider w-[200px]  '>
+                  <h1 className='absolute top-0 p-3 flex flex-col  text-[var(--main-color)] text-2xl uppercase font-bold tracking-wider w-[200px]  '>
                     Dentica
-                    <span className='text-base tracking-tight'>
+                    <span className='text-xs tracking-tight'>
                       Gabinet stomatologiczny
                     </span>
                   </h1>
@@ -85,25 +85,35 @@ const Header = () => {
           <div className='divShadow absolute right-[1%] top-[17px] pointer-events-auto'>
             <div
               className={cn(
-                'hidden lg:flex items-center  navClipPath bg-[var(--main-color)] h-[80px] w-[624px]  xl:w-[824px] xl:h-[100px] text-center ',
+                'hidden lg:flex items-center  navClipPath bg-[var(--main-color)] h-[80px] w-[624px] xl:w-[824px] xl:h-[100px] text-center ',
                 {}
               )}>
-              <ul className='flex  items-center text-2xl absolute w-3/4 justify-between left-1/2 -translate-x-1/2 tracking-wider '>
-                {links.map((link, index) => (
-                  <li
-                    key={index}
-                    className={cn(
-                      `lg:text-md text-[var(--text-first-color)] hover:text-[var(--text-first-color-hover)] transition-colors text-center relative w-full group`,
-                      {
-                        'text-main-color': url === link.path,
-                      }
-                    )}>
-                    <Link href={link.path} className='w-auto relative'>
-                      {link.name}
-                      <div className='absolute bottom-[-5px] h-[1px] w-[0%] bg-white left-1/2 -translate-x-1/2 group-hover:w-[110%] duration-300'></div>
-                    </Link>
-                  </li>
-                ))}
+              <ul className='flex items-start text-base xl:text-xl absolute w-3/4 justify-between left-1/2 -translate-x-1/2  '>
+                {links.map((link, index) => {
+                  const splitlink = link.path.split('/');
+
+                  return (
+                    <li
+                      key={index}
+                      className={cn(
+                        `text-[var(--text-first-color)] hover:text-[var(--text-first-color-hover)] transition-colors text-center relative w-full group px-2`,
+                        {}
+                      )}>
+                      <Link href={link.path} className='w-auto relative'>
+                        {link.name}
+                        <div
+                          className={cn(
+                            'absolute bottom-[-5px] h-[1px] w-[0%] bg-white left-1/2 -translate-x-1/2 group-hover:w-[110%] duration-300',
+                            {
+                              'w-[110%] opacity-75':
+                                linkParts[1] === splitlink[1],
+                            }
+                          )}
+                        />
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>

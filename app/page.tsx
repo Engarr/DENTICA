@@ -6,7 +6,7 @@ import WelcomeSection from '@/components/home-page/welcome-section';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between  '>
+    <main className='flex min-h-screen flex-col items-center justify-between  overflow-x-hidden'>
       <WelcomeSection />
       <SecondSection />
       <OurOffertSection />

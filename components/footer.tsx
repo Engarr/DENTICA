@@ -67,7 +67,7 @@ const Footer = () => {
           </p>
           <Link
             href='/polityka-prywatnosci'
-            className='text-xs lg:text-md  hover:text-blue-400 duration-150
+            className='text-xs lg:text-md  hover:text-blue-200 duration-150
               mt-1'>
             Polityka prywatności
           </Link>
@@ -117,7 +117,8 @@ const Section = ({ data }: SectionType) => {
       </div>
       <ul className='text-lg lg:text-xl'>
         {data.text.map((item, i) => (
-          <li key={i} className=''>
+          <li key={i} className='flex items-center gap-2'>
+            <div className='w-[2px] h-[2px] bg-[var(--text-first-color)]' />
             {item}
           </li>
         ))}

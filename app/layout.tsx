@@ -1,15 +1,8 @@
 import type { Metadata } from 'next';
-import { Big_Shoulders_Display } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-
-const poppins = Big_Shoulders_Display({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-big-shoulders-display',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-});
+import { poppins } from '@/lib/fonts';
 
 export const metadata: Metadata = {
   title: 'DENTICA',

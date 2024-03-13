@@ -7,27 +7,25 @@ import ContactForm from './components/contact-form';
 
 const ContactSection = () => {
   return (
-    <section className='w-full relative h-full'>
+    <section className='w-full relative h-full '>
       <Wrapper>
-        <div className='divShadow relative top-0 w-full xl:w-[85%] 2xl:w-3/4 px-2 '>
-          <div className=' mb-24 max-lg:mobileContactClipPath lg:contactClipPath'>
-            <div className=' relative left-1/2 lg:left-[65%] -translate-x-1/2 py-10 px-3 xs:py-16 xs:px-4 w-full flex flex-col gap-3 lg:gap-5 text-[var(--text-first-color)] max-w-[35rem]  tracking-wide'>
-              <h4 className='text-xl xs:text-2xl md:text-3xl xl:text-4xl font-bold '>
+        <div className='divShadow relative top-0 w-full xl:w-[85%] 2xl:w-4/5 px-2 '>
+          <div className=' mb-24 max-lg:mobileContactClipPath lg:contactClipPath '>
+            <div className=' relative left-1/2 lg:left-[65%] -translate-x-1/2 py-10 px-4 xs:py-16 xs:px-4 w-full flex flex-col gap-3 lg:gap-5 text-[var(--text-first-color)] max-w-[45rem]  tracking-wide'>
+              <h4 className='text-lg xs:text-xl md:text-2xl xl:text-3xl font-bold '>
                 Postaw na praktyczną wiedzę z Dentica
               </h4>
               <div className=''>
-                <Button style='w-full md:w-auto text-md '>
-                  Umów wizytę online
-                </Button>
+                <Button style='w-full md:w-auto '>Umów wizytę online</Button>
               </div>
-              <p className='text-lg xs:text-xl md:text-2xl xl:text-3xl '>
+              <p className='text-base xs:text-lg md:text-xl xl:text-2xl '>
                 Chętnie odpowiemy na Twoje pytanie
               </p>
               <ContactForm />
             </div>
           </div>
 
-          <div className='hidden lg:inline-block lg:absolute w-[550px] lg:w-[500px] lg:left-[-11%] lg:top-[23%] xl:top-[28%] 2xl:w-[650px] 2xl:left-[-10%] 2xl:top-[9%]'>
+          <div className='hidden lg:inline-block lg:absolute w-[550px] lg:w-[500px] lg:left-[-11%] lg:top-[22%] xl:top-[24%] 2xl:w-[600px] 2xl:left-[-10%] 2xl:top-[17%] '>
             <Image
               src={doctor}
               alt='zdjęcie lekarza'
