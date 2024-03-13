@@ -41,18 +41,18 @@ const Header = () => {
   return (
     <>
       <motion.header
-        className='flex fixed sm:justify-center justify-between w-[100%] sm:h-[80px] z-30 top-0  '
+        className='flex fixed sm:justify-center justify-between w-[100%] sm:h-[80px]  top-0  z-[9999] pointer-events-none'
         variants={{
           visible: { y: 0 },
           hidden: { y: -200 },
         }}
         transition={{ duration: 0.5, ease: 'easeInOut' }}>
         <motion.nav
-          className=' max-w-[1920px] flex justify-between items-center py-2 w-[100vw] relative'
+          className=' max-w-[1920px] flex justify-between items-center py-2 w-full relative '
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
-          <div className=' w-full '>
+          <div className=' w-full pointer-events-auto'>
             <Link href='/'>
               <motion.div
                 whileHover={{
@@ -82,7 +82,7 @@ const Header = () => {
               </motion.div>
             </Link>
           </div>
-          <div className='divShadow absolute right-[1%] top-[17px]'>
+          <div className='divShadow absolute right-[1%] top-[17px] pointer-events-auto'>
             <div
               className={cn(
                 'hidden lg:flex items-center  navClipPath bg-[var(--main-color)] h-[80px] w-[624px]  xl:w-[824px] xl:h-[100px] text-center ',
@@ -108,7 +108,7 @@ const Header = () => {
             </div>
           </div>
           <motion.div
-            className='relative lg:hidden pr-2 py-4 mr-2 sm:pr-3 z-30 '
+            className='relative lg:hidden pr-2 py-4 mr-2 sm:pr-3 z-30 pointer-events-auto'
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}>
             <div

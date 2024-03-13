@@ -7,7 +7,7 @@ import { MdEmail } from 'react-icons/md';
 const SecondSectionTextBox = () => {
   return (
     <div className='divShadow absolute top-1/2 -translate-y-1/2  p-2 text-[var(--text-first-color)] max-w-full lg:ml-[5%]'>
-      <div className='infoClipPath bg-black/60  px-4 py-4 lg:py-8 lg:px-10  flex flex-col gap-3'>
+      <div className='infoClipPath bg-black/60  px-4 max-lg:pt-5 max-lg:pb-9 lg:py-8 lg:px-10  flex flex-col gap-3'>
         <h3 className='text-xl xs:text-3xl lg:text-5xl font-bold'>
           Drodzy pacjenci
         </h3>
