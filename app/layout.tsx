@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Big_Shoulders_Display } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 const poppins = Big_Shoulders_Display({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${poppins.className} `}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
