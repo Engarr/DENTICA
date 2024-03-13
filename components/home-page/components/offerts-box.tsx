@@ -10,12 +10,13 @@ type OfferType = {
   title: string;
   text: string;
 };
-const SPRING_OPTIONS = {
-  // type: 'spring',
-  mass: 4,
-  stiffness: 500,
-  damping: 100,
-};
+// const SPRING_OPTIONS = {
+//   type: 'spring',
+//   mass: 4,
+//   stiffness: 500,
+//   damping: 100,
+//   ease: 'easeOut',
+// };
 
 const OffertsBox = () => {
   const [transformIndex, setTransformIndex] = useState(0);
@@ -53,7 +54,8 @@ const OffertsBox = () => {
               <motion.div
                 key={columnIndex}
                 className={`grid grid-cols-1 gap-1 w-full shrink-0  relative `}
-                animate={{ translateX: `-${transformIndex * 100}%` }}>
+                animate={{ translateX: `-${transformIndex * 100}%` }}
+                transition={{ ease: 'easeOut' }}>
                 {column.map((offer: OfferType, offerIndex: number) => (
                   <div key={offerIndex} className='w-full'>
                     <OffertCard text={offer.text} title={offer.title} />
