@@ -52,9 +52,8 @@ const OffertsBox = () => {
             .map((column, columnIndex) => (
               <motion.div
                 key={columnIndex}
-                className='grid grid-cols-1 gap-1 w-full shrink-0  relative '
-                animate={{ translateX: `-${transformIndex * 100}%` }}
-                transition={SPRING_OPTIONS}>
+                className={`grid grid-cols-1 gap-1 w-full shrink-0  relative `}
+                animate={{ translateX: `-${transformIndex * 100}%` }}>
                 {column.map((offer: OfferType, offerIndex: number) => (
                   <div key={offerIndex} className='w-full'>
                     <OffertCard text={offer.text} title={offer.title} />

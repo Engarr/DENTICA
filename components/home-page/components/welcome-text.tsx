@@ -7,7 +7,7 @@ import Wrapper from '@/components/wrapper';
 const WelcomeText = () => {
   return (
     <motion.div
-      className=' absolute top-1/2 flex flex-col justify-center items-center lg:left-[55%] bg-white/70 lg:bg-transparent w-full lg:w-auto py-5 lg:top-[35%] gap-1 xl:gap-5 '
+      className=' absolute top-1/2 flex flex-col justify-center items-center lg:left-[55%] bg-white/70 lg:bg-transparent w-full lg:w-auto py-5 lg:top-[35%] gap-1 xl:gap-5 z-50 '
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}>
