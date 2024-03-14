@@ -105,7 +105,7 @@ const Header = () => {
                           className={cn(
                             'absolute bottom-[-5px] h-[1px] w-[0%] bg-white left-1/2 -translate-x-1/2 group-hover:w-[110%] duration-300',
                             {
-                              'w-[110%] opacity-75':
+                              'w-[110%] opacity-75 h-[2px]':
                                 linkParts[1] === splitlink[1],
                             }
                           )}

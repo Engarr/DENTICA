@@ -9,12 +9,12 @@ export default async function GymLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className='my-[150px] '>
-      <Wrapper style=''>
-        <div className='flex justify-start w-full px-20'>
+    <section className='mt-[50px] lg:mt-[150px] '>
+      <Wrapper style='mt-[100px]'>
+        <div className='flex justify-start w-full flex-col lg:flex-row'>
           <OfferNav />
 
-          <div className='w-3/5 px-20'>{children}</div>
+          <div className=' '>{children}</div>
         </div>
       </Wrapper>
     </section>

@@ -1,3 +1,13 @@
+import bonding from '@/public/bonding.jpg';
+import dentistry from '@/public/dentistry.jpg';
+import implant from '@/public/implant.jpg';
+import prosthetics from '@/public/prosthetics.jpg';
+import radiology from '@/public/radiology.jpg';
+import surgery from '@/public/surgery.jpg';
+import teethWhitening from '@/public/teeth-whitening.jpg';
+import stomatologicalCuration from '@/public/stomatological_curation.jpg';
+import rootCanalTreatment from '@/public/root-canal-treatment-of-the-tooth.jpg';
+
 export const offerData = [
   { title: 'Stomatologia zachowawcza', text: 'leczenie próchnicy' },
   { title: 'Radiologia', text: 'Prześwietlanie zębów' },
@@ -32,7 +42,9 @@ export const DUMMY_DATA = [
       'Obecnie wizyty związane z leczeniem próchnicy, przy użyciu bezpiecznych metod znieczulenia, mogą stać się całkowicie bezbolesne i bezstresowe. Podczas leczenia zachowawczego zastosowanie nowoczesnych narzędzi i materiałów pozwala na perfekcyjne odtworzenie kształtu i koloru korony zęba.',
       'Najczęstszymi zabiegami są: leczenie wczesnej próchnicy, leczenie ubytków o różnym stopniu zaawansowania próchnicy, leczenie pourazowe.',
     ],
+    img: dentistry,
   },
+
   {
     title: 'Endoncja',
     id: 'endoncja',
@@ -41,6 +53,7 @@ export const DUMMY_DATA = [
       'Procedura polega na dokładnym oczyszczeniu wnętrza zęba poprzez usuwanie martwej lub zakażonej tkanki oraz dezynfekcję kanałów korzeniowych. Następnie kanały te są wypełniane specjalnym materiałem w celu zapewnienia trwałej szczelności. Kontrolę poprawności wypełnienia przeprowadza się zazwyczaj przy użyciu zdjęć rentgenowskich.',
       'Dzięki leczeniu kanałowemu możliwe jest przedłużenie trwałości naturalnych zębów, co przyczynia się do zachowania zdrowia jamy ustnej na dłuższą metę.',
     ],
+    img: rootCanalTreatment,
   },
   {
     title: 'Protetyka',
@@ -50,6 +63,7 @@ export const DUMMY_DATA = [
       'Indywidualne podejście do pacjenta oraz uwzględnienie jego oczekiwań są kluczowe, ponieważ każdy jest inny. Lekarz proponuje najlepsze rozwiązanie, biorąc pod uwagę zarówno aspekty funkcjonalne, jak i estetyczne, dbając o dobre samopoczucie pacjenta.',
       'W zależności od stanu uzębienia stosuje się różne rodzaje uzupełnień. Do uzupełnień stałych należą korony i mosty, które są trwale osadzone w jamie ustnej. Natomiast uzupełnienia ruchome obejmują protezy, które mogą być łatwo zdejmowane i zakładane przez pacjenta.',
     ],
+    img: prosthetics,
   },
   {
     title: 'Bonding',
@@ -57,6 +71,7 @@ export const DUMMY_DATA = [
     desc: [
       'To metoda odbudowy zębów, która jest szybka, małoinwazyjna i nie wymaga szlifowania. Polega na nałożeniu cienkiej warstwy kompozytu wykonanego z żywicy na ząb. Jest stosowana do naprawy uszkodzonych powierzchni zębów oraz poprawy estetyki, szczególnie w przypadku przebarwień.',
     ],
+    img: bonding,
   },
   {
     title: 'Implanty',
@@ -67,6 +82,7 @@ export const DUMMY_DATA = [
       'Po wszczepieniu rozpoczyna się proces gojenia, trwający od 3 do 6 miesięcy, zwany osseointegracją. W jego trakcie kość ściśle zrasta się z implantem, co zapewnia jego solidne osadzenie.',
       'Po zakończeniu procesu gojenia, który może trwać od 3 do 6 miesięcy, można przystąpić do pracy protetycznej. Specjalny łącznik protetyczny jest przykręcany do implantu, a na nim montowana jest korona, mostek lub proteza. Wynik jest nie tylko funkcjonalny i trwały, ale także estetyczny.',
     ],
+    img: implant,
   },
   {
     title: 'Wybielanie',
@@ -77,6 +93,7 @@ export const DUMMY_DATA = [
       'Wybielanie zębów to bezpieczny i bezbolesny sposób na usunięcie przebarwień i odzyskanie białego uśmiechu.',
       'Istnieje kilka metod wybielania. Jedną z nich jest wybielanie w gabinecie przy użyciu specjalnej lampy, a drugą popularną metodą jest wybielanie nakładkowe, które można wykonać w domu za pomocą specjalnych nakładek z żelem wybielającym. Efekt po wybielaniu jest imponujący i utrzymuje się przez długi czas.',
     ],
+    img: teethWhitening,
   },
   {
     title: 'Profilaktyka',
@@ -93,6 +110,7 @@ export const DUMMY_DATA = [
         'Higienizację powinniśmy wykonywać co najmniej raz w roku, by uniknąć nadmiernego powstawania złogów kamienia, które mogą powodować nieświeży oddech i krwawienie dziąseł.',
       ],
     },
+    img: stomatologicalCuration,
   },
   {
     title: 'Chirurgia',
@@ -101,6 +119,7 @@ export const DUMMY_DATA = [
       'Chirurgia stomatologiczna specjalizuje się głównie w trudnych przypadkach ekstrakcji zębów. Oprócz tego przeprowadza również różnorodne zabiegi w obrębie jamy ustnej oraz przygotowawcze procedury związane z ortodoncją, protetyką i implantologią.',
       'W chirurgii stomatologicznej większość zabiegów przeprowadza się przy użyciu znieczulenia miejscowego. Jest to korzystne, ponieważ eliminuje ból, jednocześnie umożliwiając zachowanie kontaktu z pacjentem.',
     ],
+    img: surgery,
   },
   {
     title: 'Radiologia',
@@ -115,5 +134,6 @@ export const DUMMY_DATA = [
         'Badanie panoramiczne (panoramiczne zdjęcie rentgenowskie) - jest mniej szczegółowe od badania punktowego, ale obejmuje wszystkie zęby oraz struktury szczęki i żuchwy. Jest często wykonywane w przypadku planowania leczenia protetycznego lub innych zabiegów stomatologicznych wymagających szerszego zobrazowania jamy ustnej.',
       ],
     },
+    img: radiology,
   },
 ];

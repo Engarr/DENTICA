@@ -14,7 +14,13 @@ type OffertCard = {
 const OffertCard = ({ title, text }: OffertCard) => {
   return (
     <Link href={`/zabiegi/${title.toLocaleLowerCase()}`}>
-      <div className='relative flex flex-col justify-center items-center gap-1 my-5 lg:hover:shadow-lg p-4 group transition-all duration-300 cursor-pointer'>
+      <motion.div
+        className='relative flex flex-col justify-center items-center gap-1 my-5 lg:hover:shadow-lg p-4 group transition-all duration-300 cursor-pointer rounded-md'
+        whileTap={{ scale: 0.95 }}
+        whileHover={{
+          scale: 1.05,
+          transition: { duration: 0.1 },
+        }}>
         <div className='w-[100px] lg:w-auto'>
           <Image
             alt=''
@@ -32,6 +38,7 @@ const OffertCard = ({ title, text }: OffertCard) => {
         <div>
           <p className='text-sm lg:text-lg  italic'>{text}</p>
         </div>
+
         <motion.div
           className='absolute top-[20%] right-[10%] lg:top-0 lg:right-0 p-2 lg:hidden lg:group-hover:inline-block w-[50px] lg:w-[60px]'
           whileTap={{ scale: 0.95 }}
@@ -40,7 +47,7 @@ const OffertCard = ({ title, text }: OffertCard) => {
           }}>
           <Image src={arrow} alt='' className='w-full' />
         </motion.div>
-      </div>
+      </motion.div>
     </Link>
   );
 };
