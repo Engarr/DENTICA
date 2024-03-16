@@ -39,7 +39,9 @@ const AboutUsSection = () => {
               </li>
             </ul>
             <div className='xl:w-[300px]'>
-              <Button style='text-[var(--main-color)] text-lg xs:text-lg md:text-lg lg:text-2xl w-full border-[var(--main-color)]'>
+              <Button
+                style='text-[var(--main-color)] text-lg xs:text-lg md:text-lg lg:text-2xl w-full border-[var(--main-color)]'
+                href='/o-nas'>
                 Więcej o nas
               </Button>
             </div>

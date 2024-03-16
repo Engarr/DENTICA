@@ -56,6 +56,8 @@ const Page = () => {
               alt=' '
               src={foundInfo?.img}
               fill
+              quality={80}
+              loading='lazy'
               className='object-contain absolute left-0 top-0 object-center lg:object-left'
             />
           </div>

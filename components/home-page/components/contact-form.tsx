@@ -90,7 +90,9 @@ const ContactForm = () => {
         </p>
       </label>
       <div className='flex items-start mt-2 md:w-auto '>
-        <Button style='max-lg:w-full '>Wyślij wiadomość</Button>
+        <Button style='max-lg:w-full ' href='/'>
+          Wyślij wiadomość
+        </Button>
       </div>
     </form>
   );

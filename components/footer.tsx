@@ -47,7 +47,7 @@ const sectionThreeData = [
 
 const Footer = () => {
   return (
-    <footer className='   py-5 lg:py-10 z-50 min-h-[250px]   bg-[var(--main-color-80)] text-[var(--text-first-color)]'>
+    <footer className='max-lg:footerMobileClipPath lg:footerClipPath   py-5 lg:py-10 z-50 min-h-[250px]   bg-[var(--main-color-80)] text-[var(--text-first-color)]'>
       <div className='w-3/4 flex justify-center items-center text-center lg:text-start flex-col xl:flex-row gap-4 lg:gap-1 container left-1/2 relative -translate-x-1/2'>
         <div className=' max-w-[20rem] items-center xl:items-start flex flex-col mb-2 xl:mb-0 '>
           <Link href='/'>

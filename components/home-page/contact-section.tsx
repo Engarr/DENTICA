@@ -16,7 +16,9 @@ const ContactSection = () => {
                 Postaw na praktyczną wiedzę z Dentica
               </h4>
               <div className=''>
-                <Button style='w-full md:w-auto '>Umów wizytę online</Button>
+                <Button style='w-full md:w-auto ' href='/'>
+                  Umów wizytę online
+                </Button>
               </div>
               <p className='text-base xs:text-lg md:text-xl xl:text-2xl '>
                 Chętnie odpowiemy na Twoje pytanie
