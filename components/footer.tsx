@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaFacebookSquare } from 'react-icons/fa';
 import logo from '@/public/logo.png';
+import Wrapper from './wrapper';
 
 const sectionTwoData = [
   {
@@ -54,23 +55,17 @@ const Footer = () => {
             <Image
               src={logo}
               alt='logo'
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               sizes='100vh'
               className='mb-2 rounded-[17px]'
               loading='lazy'
             />
           </Link>
-          <p className='text-lg'>
+          <p className='text-sm'>
             Nowoczesna stomatologia w leczeniu bólu zębów oraz poprawy
             estetycznego ich wyglądu.
           </p>
-          <Link
-            href='/polityka-prywatnosci'
-            className='text-xs lg:text-md  hover:text-blue-200 duration-150
-              mt-1'>
-            Polityka prywatności
-          </Link>
         </div>
 
         <div className=' flex gap-3 lg:gap-0 flex-col md:flex-row justify-around w-full max-w-[40rem]'>
@@ -80,22 +75,35 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className='w-full '>
+          <div className='w-full'>
             {sectionThreeData.map((section, index) => (
               <Section key={index} data={section} />
             ))}
-
-            {/* <a
-              href='https://www.facebook.com/profile.php?id=61556577959946'
-              className='flex gap-2 items-center justify-center lg:justify-start text-xs lg:text-base w-full  text-center hover:text-blue-400 duration-150'
-              target='_blank'
-              rel='noopener noreferrer'>
-              <p>Znajdziesz nas również na facebooku</p>
-              <FaFacebookSquare className=' text-blue-500 text-[20px]' />
-            </a> */}
           </div>
         </div>
       </div>
+      <Wrapper style=' justify-around mt-[30px]'>
+        <div className='absolute bg-[var(--background-main-color-20)] w-full h-[2px] max-w-[1410px] top-[-30%]' />
+        <div>
+          <Link
+            href='/'
+            className=' hover:text-blue-200 duration-150
+              mt-1'>
+            Polityka prywatności
+          </Link>
+        </div>
+        <div className='flex'>
+          <p> realizacja:</p>
+
+          <a
+            href='https://www.modezp.com/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='pl-1 hover:text-blue-200 text-[var(--text-first-color)] transition-colors '>
+            modezp.com
+          </a>
+        </div>
+      </Wrapper>
     </footer>
   );
 };
@@ -112,10 +120,10 @@ type NavSectionType = {
 const Section = ({ data }: SectionType) => {
   return (
     <div className='flex-1'>
-      <div className='text-xl lg:text-2xl mb-1 font-semibold'>
+      <div className='text-lg lg:text-xl mb-1 font-semibold'>
         <p>{data.title}</p>
       </div>
-      <ul className='text-lg lg:text-xl'>
+      <ul className='text-sm lg:text-base'>
         {data.text.map((item, i) => (
           <li key={i} className='flex items-center gap-2'>
             <div className='w-[2px] h-[2px] bg-[var(--text-first-color)]' />
@@ -129,10 +137,10 @@ const Section = ({ data }: SectionType) => {
 const NavSection = ({ data }: NavSectionType) => {
   return (
     <div className='flex-1'>
-      <div className='text-xl lg:text-2xl mb-1 font-semibold '>
+      <div className='text-lg lg:text-xl mb-1 font-semibold '>
         <p>{data.title}</p>
       </div>
-      <ul className='flex flex-col lg:gap-[1px] gap-1 items-center lg:items-start text-lg lg:text-xl '>
+      <ul className='flex flex-col lg:gap-[1px] gap-1 items-center lg:items-start text-sm lg:text-base '>
         {data.links.map((item, i) => (
           <li
             key={i}

@@ -37,7 +37,7 @@ const Header = () => {
       return !prev;
     });
   };
-
+  const animation = 'transition-all duration-300';
   return (
     <>
       <motion.header
@@ -60,7 +60,11 @@ const Header = () => {
                   transition: { duration: 0.1 },
                 }}
                 className='flex items-center absolute left-[1%] top-[17px] '>
-                <div className='custom:inline ml-[0.5rem] sm:ml-0 w-[4rem] lg:w-[90px] h-auto rounded-[17px] overflow-hidden z-[999] mr-2 '>
+                <div
+                  className={cn(
+                    `custom:inline ml-[0.5rem] sm:ml-0 w-[4rem] lg:w-[90px] h-auto rounded-[17px] overflow-hidden z-[999] mr-2 ${animation}`,
+                    { 'lg:w-[60px]': !hidden }
+                  )}>
                   {' '}
                   <Image
                     src={logo}
@@ -71,10 +75,25 @@ const Header = () => {
                   />
                 </div>
                 <div className='relative hidden lg:inline-block '>
-                  <div className='relative hidden lg:flex h-[80px]   flex-col bg-slate-200/75 px-3 rounded-[2px] blur-[2px] w-[200px]' />
-                  <h1 className='absolute top-0 p-3 flex flex-col  text-[var(--main-color)] text-2xl uppercase font-bold tracking-wider w-[200px]  '>
+                  <div
+                    className={cn(
+                      `relative hidden lg:flex h-[80px]  flex-col bg-slate-200/75 px-3 rounded-[2px] blur-[2px] w-[200px] ${animation}`,
+                      { 'h-[45px] w-[100px]': !hidden }
+                    )}
+                  />
+                  <h1
+                    className={cn(
+                      `absolute top-0 p-3 flex flex-col  text-[var(--main-color)] text-2xl uppercase font-bold tracking-wider w-[200px] ${animation} `,
+                      { 'text-base': !hidden }
+                    )}>
                     Dentica
-                    <span className='text-xs tracking-tight'>
+                    <span
+                      className={cn(
+                        `text-xs tracking-tight inline-block transition delay-150 duration-300 ease-in-out opacity-1`,
+                        {
+                          'opacity-0 delay-0': !hidden,
+                        }
+                      )}>
                       Gabinet stomatologiczny
                     </span>
                   </h1>
@@ -85,10 +104,14 @@ const Header = () => {
           <div className='divShadow absolute right-[1%] top-[17px] pointer-events-auto'>
             <div
               className={cn(
-                'hidden lg:flex items-center  navClipPath bg-[var(--main-color)] h-[80px] w-[624px] xl:w-[824px] xl:h-[100px] text-center ',
-                {}
+                `hidden lg:flex items-center  navClipPath bg-[var(--main-color)] h-[80px] w-[624px] xl:w-[824px] xl:h-[100px] text-center ${animation}`,
+                { 'xl:h-[65px] navClipPath2': !hidden }
               )}>
-              <ul className='flex items-start text-base xl:text-xl absolute w-3/4 justify-between left-1/2 -translate-x-1/2  '>
+              <ul
+                className={cn(
+                  `flex items-start text-base xl:text-xl absolute w-3/4 justify-between left-1/2 -translate-x-1/2 ${animation}`,
+                  { 'xl:text-base ': !hidden }
+                )}>
                 {links.map((link, index) => {
                   const splitlink = link.path.split('/');
 
