@@ -22,9 +22,9 @@ const Header = () => {
     const previous = scrollY.getPrevious();
     if (previous) {
       if (latest > 50) {
-        setHidden(false);
-      } else {
         setHidden(true);
+      } else {
+        setHidden(false);
       }
     }
   });
@@ -63,7 +63,7 @@ const Header = () => {
                 <div
                   className={cn(
                     `custom:inline ml-[0.5rem] sm:ml-0 w-[4rem] lg:w-[90px] h-auto rounded-[17px] overflow-hidden z-[999] mr-2 ${animation}`,
-                    { 'lg:w-[60px]': !hidden }
+                    { 'lg:w-[60px]': hidden }
                   )}>
                   {' '}
                   <Image
@@ -78,20 +78,20 @@ const Header = () => {
                   <div
                     className={cn(
                       `relative hidden lg:flex h-[80px]  flex-col bg-slate-200/75 px-3 rounded-[2px] blur-[2px] w-[200px] ${animation}`,
-                      { 'h-[45px] w-[100px]': !hidden }
+                      { 'h-[45px] w-[100px]': hidden }
                     )}
                   />
                   <h1
                     className={cn(
                       `absolute top-0 p-3 flex flex-col  text-[var(--main-color)] text-2xl uppercase font-bold tracking-wider w-[200px] ${animation} `,
-                      { 'text-base': !hidden }
+                      { 'text-base': hidden }
                     )}>
                     Dentica
                     <span
                       className={cn(
                         `text-xs tracking-tight inline-block transition delay-150 duration-300 ease-in-out opacity-1`,
                         {
-                          'opacity-0 delay-0': !hidden,
+                          'opacity-0 delay-0': hidden,
                         }
                       )}>
                       Gabinet stomatologiczny
@@ -105,12 +105,12 @@ const Header = () => {
             <div
               className={cn(
                 `hidden lg:flex items-center  navClipPath bg-[var(--main-color)] h-[80px] w-[624px] xl:w-[824px] xl:h-[100px] text-center ${animation}`,
-                { 'xl:h-[65px] navClipPath2': !hidden }
+                { ' h-[60px] xl:h-[65px] navClipPath2 xl:w-[624px]': hidden }
               )}>
               <ul
                 className={cn(
                   `flex items-start text-base xl:text-xl absolute w-3/4 justify-between left-1/2 -translate-x-1/2 ${animation}`,
-                  { 'xl:text-base ': !hidden }
+                  { 'xl:text-base ': hidden }
                 )}>
                 {links.map((link, index) => {
                   const splitlink = link.path.split('/');
@@ -147,7 +147,7 @@ const Header = () => {
             <div
               className={cn(
                 'absolute lg:hidden bg-white  w-[50px] h-[50px] left-[-5px] top-0 z-[-10] pr-2 py-5 mt-3 mr-4 opacity-65 rounded-[17px] blur-[1px] transition-all duration-500 ',
-                { 'bg-transparent': hidden }
+                { 'bg-transparent': !hidden }
               )}
             />
             <BurgerMenuBtn
