@@ -11,9 +11,7 @@ import {
 } from 'react-hook-form';
 import { sendFormData, FormData } from '@/lib/contact-form';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import toast from 'react-hot-toast';
-import Button from '@/components/UI/button';
 
 const ContactForm = () => {
   const { control, handleSubmit, reset } = useForm<FormData>();
@@ -90,9 +88,15 @@ const ContactForm = () => {
         </p>
       </label>
       <div className='flex items-start mt-2 md:w-auto '>
-        <Button style='max-lg:w-full ' href='/'>
+        <motion.button
+          className=' font-bold text-[var(--text-first-color)] border-2 px-[20px] py-[10px] text-sm xs:text-base md:text-lg lg:text-2xl rounded-sm max-lg:w-full'
+          whileTap={{ scale: 0.95 }}
+          whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.1 },
+          }}>
           Wyślij wiadomość
-        </Button>
+        </motion.button>
       </div>
     </form>
   );

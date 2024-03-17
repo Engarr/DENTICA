@@ -9,15 +9,12 @@ const sectionTwoData = [
   {
     title: 'Przejdź do:',
     links: [
+      {
+        text: 'Strona glówna',
+        link: '/',
+      },
       { text: 'Zabiegi', link: '/zabiegi' },
-      {
-        text: 'Metamorfozy',
-        link: '/metamorfozy',
-      },
-      {
-        text: 'Metamorfozy',
-        link: '/uslugi/logo',
-      },
+
       {
         text: 'O nas',
         link: '/o-nas',
@@ -145,7 +142,7 @@ const NavSection = ({ data }: NavSectionType) => {
           <li
             key={i}
             className='flex items-center justify-start hover:text-main-color duration-150 group relative '>
-            <div className='w-[1px] h-[2px] bg-white mr-2 rounded-full group-hover:w-[100%] duration-500 transition-all bottom-[-2%] absolute left-0 hidden lg:inline-block' />
+            <div className='w-[1px] h-[2px] bg-transparent mr-2 rounded-full group-hover:w-[100%] group-hover:bg-white duration-500 transition-all bottom-[-2%] absolute left-0 hidden lg:inline-block' />
             <Link href={item.link}> {item.text}</Link>
           </li>
         ))}

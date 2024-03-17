@@ -16,7 +16,7 @@ const ContactSection = () => {
                 Postaw na praktyczną wiedzę z Dentica
               </h4>
               <div className=''>
-                <Button style='w-full md:w-auto ' href='/'>
+                <Button style='w-full md:w-auto ' href='/kontakt'>
                   Umów wizytę online
                 </Button>
               </div>

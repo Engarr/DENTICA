@@ -109,7 +109,7 @@ const Header = () => {
               )}>
               <ul
                 className={cn(
-                  `flex items-start text-base xl:text-xl absolute w-3/4 justify-between left-1/2 -translate-x-1/2 ${animation}`,
+                  `flex items-start text-base xl:text-xl absolute w-4/5 justify-between left-1/2 -translate-x-1/2 ${animation}`,
                   { 'xl:text-base ': hidden }
                 )}>
                 {links.map((link, index) => {
@@ -119,7 +119,7 @@ const Header = () => {
                     <li
                       key={index}
                       className={cn(
-                        `text-[var(--text-first-color)] hover:text-[var(--text-first-color-hover)] transition-colors text-center relative w-full group px-2`,
+                        `text-[var(--text-first-color)] hover:text-[var(--text-first-color-hover)] transition-colors text-center relative w-full group whitespace-nowrap  px-3`,
                         {}
                       )}>
                       <Link href={link.path} className='w-auto relative'>
