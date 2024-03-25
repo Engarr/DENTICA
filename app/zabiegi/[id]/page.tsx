@@ -17,7 +17,7 @@ const Page = () => {
   );
 
   return (
-    <div className={`${poppins.className} w-full px-5 lg:px-10`}>
+    <div className={`${poppins.className} w-full px-5 lg:px-10 lg:dmb-[100px]`}>
       <div className='divShadow py-5 lg:pb-10'>
         <div className='text-base md:text-xl lg:text-2xl 2xl:text-3xl my-2 w-full sectionClipPath h-[60px] lg:h-[80px] bg-[var(--main-color)] text-[var(--text-first-color)] relative'>
           <h4 className='top-1/2 -translate-y-1/2 relative px-2 lg:px-5'>
