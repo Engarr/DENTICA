@@ -1,5 +1,5 @@
-import AppointmentButton from '@/components/UI/appointment-button';
-import { poppins } from '@/lib/fonts';
+import Button from '@/components/UI/button';
+import { poppins, sintony } from '@/lib/fonts';
 
 import React from 'react';
 import { BsFillTelephoneFill } from 'react-icons/bs';
@@ -10,7 +10,8 @@ const SecondSectionTextBox = () => {
     <div
       className={`divShadow absolute top-1/2 -translate-y-1/2  p-2 text-[var(--text-first-color)] max-w-full lg:ml-[5%] ${poppins.className} `}>
       <div className='infoClipPath bg-black/60  px-4 max-lg:pt-5 max-lg:pb-9 lg:py-8 lg:px-10  flex flex-col gap-3'>
-        <h3 className='text-xl xs:text-3xl lg:text-3xl font-bold'>
+        <h3
+          className={`text-xl xs:text-3xl lg:text-3xl font-bold ${sintony.className} `}>
           Drodzy pacjenci
         </h3>
         <p
@@ -31,7 +32,9 @@ const SecondSectionTextBox = () => {
           </div>
         </div>
         <div className='w-[200px] lg:w-[400px] mb-6'>
-          <AppointmentButton style='xs:w-full ' />
+          <Button style='xs:w-full' href='/kontakt'>
+            Umów się na wizytę
+          </Button>
         </div>
       </div>
     </div>

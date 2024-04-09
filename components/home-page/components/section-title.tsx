@@ -1,6 +1,7 @@
 import React from 'react';
 import Wrapper from '@/components/wrapper';
 import { cn } from '@/lib/utilis';
+import { sintony } from '@/lib/fonts';
 
 type SectionTitleType = {
   text: string;
@@ -16,7 +17,8 @@ const SectionTitle = ({ text, style }: SectionTitleType) => {
             style
           )}>
           <div className='sectionClipPath  h-[60px] lg:h-[80px] bg-[var(--main-color)] '>
-            <h3 className=' relative top-1/2 -translate-y-1/2 text-2xl lg:text-3xl px-5 font-bold text-[var(--text-first-color)]'>
+            <h3
+              className={` relative top-1/2 -translate-y-1/2 text-2xl lg:text-3xl px-5 font-bold text-[var(--text-first-color)] ${sintony.className} `}>
               {text}
             </h3>
           </div>

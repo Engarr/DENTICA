@@ -16,7 +16,7 @@ const Button = ({ children, style, href }: ButtonType) => {
     <Link href={href}>
       <motion.button
         className={cn(
-          ' font-bold text-[var(--text-first-color)] border-2 px-[20px] py-[10px] text-sm xs:text-base md:text-lg lg:text-2xl rounded-sm',
+          ' font-bold text-[var(--text-first-color)] border-2 px-[20px] py-[10px] text-sm xs:text-base md:text-lg lg:text-2xl rounded-sm border-b-4 ',
           style
         )}
         whileTap={{ scale: 0.95 }}

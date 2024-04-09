@@ -4,6 +4,7 @@ import Wrapper from '../wrapper';
 import Image from 'next/image';
 import image from '@/public/portrait-smiling-caucasian-man-dentist-posing-modern-dental-office.jpg';
 import Button from '../UI/button';
+import { sintony } from '@/lib/fonts';
 
 const AboutUsSection = () => {
   return (
@@ -12,7 +13,8 @@ const AboutUsSection = () => {
       <Wrapper style=''>
         <div className=' relative flex flex-col lg:flex-row justify-around gap-6 lg:gap-20 items-center md:items-start px-4 xs:px-5 md:px-10 2xl:px-0  py-20 mt-[40px] lg:mt-[200px]'>
           <div className='flex flex-col gap-2 xs:gap-4 lg:gap-5 flex-wrap text-[var(--text-second-color)]'>
-            <h4 className='text-base xs:text-lg lg:text-3xl font-semibold'>
+            <h4
+              className={`text-base xs:text-lg lg:text-3xl font-semibold ${sintony.className}`}>
               Wyposażenie gabinetu
             </h4>
             <p className=' text-sm xs:text-base lg:text-2xl lg:max-w-[600px] tracking-wide'>

@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { DUMMY_DATA } from '@/lib/data';
 import { poppins } from '@/lib/fonts';
 import Image from 'next/image';
-import AppointmentButton from '@/components/UI/appointment-button';
+import Button from '@/components/UI/button';
 
 const Page = () => {
   const url = usePathname();
@@ -34,7 +34,11 @@ const Page = () => {
             </p>
           </div>
         ))}
-        <AppointmentButton style='text-[var(--text-second-color)] my-5 ' />
+        <Button
+          style='text-[var(--text-second-color)] my-5 border-[var(--main-color-80)]'
+          href='/kontakt'>
+          Umów wizytę Online
+        </Button>
         {foundInfo?.ul && (
           <div className='flex flex-col gap-2'>
             <p className='mb-2 font-semibold text-lg lg:text-xl'>

@@ -9,6 +9,7 @@ import { usePathname } from 'next/navigation';
 import MobileMenu from './mobile-menu';
 import { links } from '../lib/links';
 import logo from '@/public/logo.png';
+import { sintony } from '@/lib/fonts';
 
 const Header = () => {
   const url = usePathname();
@@ -41,7 +42,7 @@ const Header = () => {
   return (
     <>
       <motion.header
-        className='flex fixed sm:justify-center justify-between w-[100%] sm:h-[80px]  top-0  z-[9999] pointer-events-none'
+        className={`flex fixed sm:justify-center justify-between w-[100%] sm:h-[80px]  top-0  z-[9999] pointer-events-none ${sintony.className} `}
         variants={{
           visible: { y: 0 },
           hidden: { y: -200 },

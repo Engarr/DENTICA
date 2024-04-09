@@ -137,3 +137,155 @@ export const DUMMY_DATA = [
     img: radiology,
   },
 ];
+export const priceData = [
+  {
+    title: 'Stomatologia zachowawcza',
+    treatments: [
+      {
+        title: 'Badanie lekarskie, wizyta kontrolna, przegląd',
+        price: 150,
+      },
+      {
+        title: 'Wypełnienie ubytku',
+        price: 250,
+      },
+      {
+        title: 'Rekonstrukcja/odbudowa zęba',
+        price: 380,
+      },
+      {
+        title: 'Znieczulenie',
+        price: 40,
+      },
+    ],
+  },
+  {
+    title: 'Leczenie kanałowe',
+    treatments: [
+      {
+        title: 'Leczenie kanału',
+        price: 500,
+      },
+    ],
+  },
+  {
+    title: 'Chirurgia',
+    treatments: [
+      {
+        title: 'Usunięcie/ekstrakcja zęba nieskomplikowanie',
+        price: 190,
+      },
+      {
+        title: 'Usunięcie/ekstrakcja zęba chirurgiczn',
+        price: 300,
+      },
+      {
+        title: 'Usunięcie/ekstrakcja zęba zatrzymanego',
+        price: 550,
+      },
+      {
+        title: 'Usunięcie szwów założonych w innym gabinecie',
+        price: 50,
+      },
+    ],
+  },
+  {
+    title: 'Prześwietlenia',
+    treatments: [
+      {
+        title: 'Wewnątrz ustne (pojedynczy ząb)',
+        price: 40,
+      },
+      {
+        title: 'Pantomograficzne',
+        price: 100,
+      },
+    ],
+  },
+  {
+    title: 'Profilaktyka stomatologiczna',
+    treatments: [
+      {
+        title: 'Fluoryzacja lakierem fluorkowym',
+        price: 40,
+      },
+      {
+        title: 'Usunięcie kamienia/skaling',
+        price: 150,
+      },
+      {
+        title: 'Piaskowanie',
+        price: 150,
+      },
+      {
+        title:
+          'Higienizacja kompleksowa (skaling + piaskowanie + polerowanie + fluoryzacja)',
+        price: 250,
+      },
+    ],
+  },
+  {
+    title: 'Protetyka',
+    treatments: [
+      {
+        title: 'Korona (1 ząb)',
+        price: 700,
+      },
+      {
+        title: 'Licówka (1 ząb)',
+        price: 650,
+      },
+      {
+        title: 'Proteza całkowita',
+        price: 1500,
+      },
+      {
+        title: 'Proteza szkieletowa',
+        price: 1700,
+      },
+    ],
+  },
+  {
+    title: 'Implanty',
+    treatments: [
+      {
+        title: 'Szablon chirurgiczny',
+        price: 700,
+      },
+      {
+        title: 'Lokator',
+        price: 1450,
+      },
+      {
+        title: 'Implantacja',
+        price: 2200,
+      },
+      {
+        title:
+          'Augumentacja (uzupełnienie kości wokół implantu materiałem kościozastępczym)',
+        price: 900,
+      },
+      {
+        title: 'Odsłonięcie śruby zamykającej',
+        price: 250,
+      },
+      {
+        title: 'Korona na implancie',
+        price: 1800,
+      },
+    ],
+  },
+  {
+    title: 'Wybielanie',
+    treatments: [
+      {
+        title: 'Wybielanie gabinetowe',
+        price: 700,
+      },
+      {
+        title: 'Wybielanie nakładkowe',
+        price: 700,
+      },
+    ],
+  },
+];

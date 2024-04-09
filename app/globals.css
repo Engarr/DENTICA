@@ -19,6 +19,11 @@
   --text-first-color-hover: #c6e6fc;
   --bar-bg-30: #0098df4d;
 }
+html,
+body,
+:root {
+  @apply h-full;
+}
 
 @layer utilities {
   input[type='number']::-webkit-inner-spin-button,
@@ -100,3 +105,4 @@ body {
   overflow-x: hidden;
   background: var(--background-main-color);
 }
+

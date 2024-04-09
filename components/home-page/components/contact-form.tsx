@@ -89,7 +89,7 @@ const ContactForm = () => {
       </label>
       <div className='flex items-start mt-2 md:w-auto '>
         <motion.button
-          className=' font-bold text-[var(--text-first-color)] border-2 px-[20px] py-[10px] text-sm xs:text-base md:text-lg lg:text-2xl rounded-sm max-lg:w-full'
+          className=' font-bold text-[var(--text-first-color)] border-2 px-[20px] py-[10px] text-sm xs:text-base md:text-lg lg:text-2xl rounded-sm max-lg:w-full border-b-4'
           whileTap={{ scale: 0.95 }}
           whileHover={{
             scale: 1.05,
