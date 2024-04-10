@@ -99,10 +99,12 @@ body,
     clip-path: polygon(18% 0, 100% 0, 100% 74%, 81% 100%, 0 100%, 0 25%);
     background-image: linear-gradient(to right, #009adf, #005379);
   }
+  .gradient {
+    background-image: linear-gradient(to right, #009adf, #005379);
+  }
 }
 
 body {
   overflow-x: hidden;
   background: var(--background-main-color);
 }
-

@@ -10,7 +10,7 @@ type SectionTitleType = {
 const SectionTitle = ({ text, style }: SectionTitleType) => {
   return (
     <Wrapper style=''>
-      <div className='relative top-0 w-full'>
+      <div className=' top-0  w-full xl:w-5/6 relative '>
         <div
           className={cn(
             'divShadow absolute top-[17px] left-[5%] lg:left-[17px] w-[92%] lg:w-2/5',

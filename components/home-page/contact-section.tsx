@@ -19,7 +19,7 @@ const ContactSection = () => {
               </h4>
               <div className=''>
                 <Button style='w-full md:w-auto ' href='/kontakt'>
-                  Umów wizytę online
+                  Umów wizytę
                 </Button>
               </div>
               <p className='text-base xs:text-lg md:text-xl xl:text-2xl '>
